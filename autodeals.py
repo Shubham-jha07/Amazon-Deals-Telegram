@@ -293,5 +293,20 @@ def main():
     print(f"New deals sent: {new_found}")
 
 if __name__ == "__main__":
+    print("🚀 Amazon Deals Bot Started")
+
+    while True:
+        try:
+            print("🔎 Scanning for new deals...")
+            main()
+            print("✅ Scan complete. Sleeping 15 minutes...\n")
+
+            time.sleep(900)   # 15 minutes
+
+        except Exception as e:
+            print("❌ Error occurred:", e)
+            print("Retrying in 60 seconds...")
+            time.sleep(60)
 
     main()
+
