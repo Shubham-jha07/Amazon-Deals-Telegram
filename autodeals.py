@@ -7,8 +7,8 @@ from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
 from urllib.parse import unquote
 import re
 
-TOKEN = "8400618658:AAE5Ba8tezzydLQJhD8Gc_TXQWlsR_yjBL4"
-CHAT_ID = "-1003615865605"
+TOKEN = os.getenv("TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 AMAZON_TAG = "mahadeals1010-21"
 
 URL = "https://indiadesire.com/lootdeals"
@@ -293,4 +293,5 @@ def main():
     print(f"New deals sent: {new_found}")
 
 if __name__ == "__main__":
+
     main()
