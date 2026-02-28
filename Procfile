@@ -1,1 +1,1 @@
-worker: python autodeals.py
+worker: python3 autodeals.py
